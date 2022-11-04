@@ -239,7 +239,7 @@ def main():
 
 if os.path.exists('dump.pickle'):
     with open('dump.pickle', 'rb') as f:
-        contacts=pickle.load(f)
+        contacts.data=pickle.load(f)
         #print(contacts)              
 
 if __name__ == '__main__':
